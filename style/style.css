@@ -1,0 +1,12 @@
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+body {
+    background: grey;
+    color: white;
+    text-align: center;
+}
+.yellow {
+    color: yellow;
+}
