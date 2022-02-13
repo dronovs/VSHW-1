@@ -1,3 +1,4 @@
+'use strict';
 function weirdCalculator () {
     let firstOperand = +prompt('Please enter the first operand');
     let secondOperand = +prompt('And now enter second operand');
