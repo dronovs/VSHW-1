@@ -16,14 +16,16 @@ function weirdCalculator () {
     function divides (a, b) {
         console.log(`result: ${a} / ${b} = ${a / b}`);
     }
-    if (operator === '+' ) {
-        sums(firstOperand, secondOperand);
-    } else if (operator === '-') {
-        subtracts(firstOperand, secondOperand);
-    } else if (operator === '*') {
-        multiplies(firstOperand, secondOperand);
-    } else if (operator === '/') {
-        divides(firstOperand, secondOperand);
+    
+    switch (operator) {
+        case '+': sums(firstOperand, secondOperand);
+        break;
+        case '-': subtracts(firstOperand, secondOperand);
+        break;
+        case '*': multiplies(firstOperand, secondOperand);
+        break;
+        case '/': divides(firstOperand, secondOperand);
+        break;
     }
 }
 weirdCalculator();
